@@ -11,3 +11,73 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  padding: 5px;
+  border-bottom: 1px solid #089FB7;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+  .header > div:nth-child(1) {
+    text-align: left;
+  }
+  .header > div:nth-child(2) {
+    display: inline-flex;
+    text-align: center;
+  }
+  .header > div:nth-child(3) {
+    text-align: right;
+  }
+
+.header-section {
+  position: relative;
+}
+.logo-text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.article-header {
+  background-color: #08a0b734;
+  padding: 5px;
+}
+  .article-header > h1,h2,h3,h4,h5 {
+    margin-bottom: 0;
+  }
+.article-content {
+  padding: 5px;
+}
+
+.quote-container {
+  border: 1px dashed #089FB7;
+  display: grid;
+  grid-template-columns: 1fr 15fr;
+  margin-top: 8px;
+  padding: 5px;
+}
+  .quote-container > p {
+    padding: 10px;
+    box-shadow: inset 0px 0px 5px 2px #08a0b732;
+  }
+
+.quote-rating-div {
+  display: block;
+  text-align: center;
+}
+  .quote-rating-div {
+    cursor: pointer;
+  }
+  .quote-rating-div#upvote-quote-div:hover {
+    color: green;
+  }
+  .quote-rating-div#downvote-quote-div:hover {
+    color: red;
+  }
+  .quote-rating-div > svg {
+    font-size: 20pt;
+  }
+
+
